@@ -1,4 +1,4 @@
-# Minuta [Número de Minuta]
+# Minuta 4
 
 **Período de la Minuta:** 17/07/2025 - [DD/MM/AAAA]
 **Fecha de Generación de la Minuta:** [DD/MM/AAAA] (cuando se termine realizar)
