@@ -46,3 +46,34 @@
 - **Cambios Realizados**:
 - **Adiciones**:
 - **Sustracciones**: Se eliminó el middleware que servía el frontend directamente al backend ya que no era lo que se pedía.
+
+---
+
+## 4. Nuevas Tecnologías / Herramientas Exploradas o Integradas
+
+- **React:** Biblioteca de JavaScript para crear interfaces de usuario, basada en componentes reutilizables que gestionan su propio estado.
+- **Vite:** Herramienta de construcción que ofrece un servidor de desarrollo ultrarrápido y carga instantánea de los cambios, optimizando el flujo de trabajo en proyectos de frontend.
+- **React Router DOM:** Biblioteca de enrutamiento que permite la navegación entre las "páginas" de una aplicación de React sin necesidad de recargar la página completa.
+
+---
+
+## 5. Obstáculos / Desafíos Identificados
+
+- **:**
+
+---
+
+## 6. Próximos Pasos y Objetivos para la Siguiente Minuta
+
+- **:**
+
+  - **Responsable(s):** Todos los integrantes.
+  - **Fecha Límite Sugerida:**
+
+---
+
+## 7. Anexos / Referencias
+
+- _-_
+
+---
