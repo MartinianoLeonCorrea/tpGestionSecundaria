@@ -1,7 +1,7 @@
 # Minuta 4
 
-**Período de la Minuta:** 17/07/2025 - [DD/MM/AAAA]  
-**Fecha de Generación de la Minuta:** [DD/MM/AAAA] (cuando se termine realizar)  
+**Período de la Minuta:** 17/07/2025 - 06/08/2025    
+**Fecha de Generación de la Minuta:** 08/08/2025    
 **Modalidad de Trabajo:** Asincrónica con Comunicación Continua y Reuniones Virtuales Sincrónicas. 
 
 ---
@@ -19,6 +19,9 @@
 - `Achares, Jonatan Francisco Angel`
 - `Correa, Martiniano León`
 - `Varrenti, Lara`
+
+**06/08/2025 (Consulta Virtual Prof. Meca)**
+
 ---
 
 ## 2. Temas Tratados y Decisiones Clave
@@ -39,7 +42,10 @@
   - **Decisión:** Quienes habían avanzado en su CRUD mostraron sus avances y charlaron dudas o sugerencias que le fueron ocurriendo en el proceso. Se acordó llevar una arquitectura de capas con la creación de las carpetas `\controllers`, `\models`, `\routes` y `\services`. Se concluyó que realizaremos una única clase Persona que tendrá un diferencial numérico para saber si se trata de un Alumno, Profesor u otro. Se debatió sobre aspectos del FrontEnd peró se harán efectivos más adelante en el proyecto.
   - **Acciones Pendientes:** Concluir todos los CRUDs simples y comenzar a crear en conjunto los CRUDs dependientes
 
-- ...
+- **06/08/2025 - Clase de Consulta con el Profesor:**
+  - **Tema:** Revisión del avance del backend, estructura de capas y estrategia para la gestión de usuarios.
+  - **Decisión:** Se confirmó que la arquitectura de capas y la estrategia de CRUD Persona eran correctas, por lo que Achares ahora se encargará del CRUD Persona. Se discutió la necesidad de separar claramente las responsabilidades del servidor, usando Express para servir únicamente la API, y un framework como Vite para el frontend.
+  - **Acciones Pendientes:** Corregir la línea de código en el backend que servía el frontend con Express directamente, y reestructurar la carpeta src del frontend para una mejor modularidad.  
 
 ---
 
@@ -51,22 +57,7 @@
 
 - **Adiciones**: _No se han implementado adiciones en el frontend en este período._
 - **Sustracciones**: _No se han realizado sustracciones en el frontend en este período._
-- **Formato/Ejemplos de Cambios Realizados:**
 
-  - [Descripción del cambio 1, ej. "Implementación de la nueva pantalla de perfil de usuario."]
-  - [Descripción del cambio 2, ej. "Optimización del rendimiento de carga de imágenes en la galería."]
-  - ...
-
-- **Formato/Ejemplos de Adiciones:**
-
-  - [Descripción de nueva funcionalidad 1, ej. "Nuevo componente de carrito de compras."]
-  - [Descripción de nueva biblioteca o framework 1, ej. "Integración de React Router."]
-  - ...
-
-- **Formato/Ejemplos de Sustracciones:**
-  - [Descripción de elemento eliminado 1, ej. "Eliminación de la sección 'Acerca de' redundante."]
-  - [Descripción de código obsoleto 1, ej. "Remoción de la dependencia 'xyz-legacy-ui'."]
-  - ...
 
 ### 3.2. Backend
 
@@ -79,9 +70,14 @@
   - **Cambios Realizados:** El compañero Correa avanzó con la implementación del CRUD Materia.
   - **Adiciones:** Se comenzó a utilizar Sequelize como ORM para la interacción con la base de datos, facilitando las operaciones CRUD.
 
-**26/07/2025 - Reorganización del proyecto en capas:**
+- **26/07/2025 - Reorganización del proyecto en capas:**
 
-- **Cambios Realizados:** Se reorganizó el sistema de paquetes y archivos del backend para adherirse a una arquitectura de capas, buscando una mejor modularidad y separación de responsabilidades. Como parte de esta refactorización, se redujeron las responsabilidades del archivo index.js, y se creó un nuevo archivo app.js para la ejecución principal de la aplicación.
+  - **Cambios Realizados:** Se reorganizó el sistema de paquetes y archivos del backend para adherirse a una arquitectura de capas, buscando una mejor modularidad y separación de responsabilidades. Como parte de esta refactorización, se redujeron las responsabilidades del archivo index.js, y se creó un nuevo archivo app.js para la ejecución principal de la aplicación.
+
+- **06/08/2025 - Se confeccionaron los primeros tres CRUDs simples**
+
+  - **Cambios Realizados:** Los tres integrantes realizaron los modelos, controladores, servicios y rutas de sus respectivos CRUDs.
+  - **Adiciones:** Los compañeros pendientes de elaborar sus CRUD (Curso y Persona) finalmente los implementaron en el proyecto.
 
 ---
 
@@ -90,7 +86,6 @@
 - **MySQL:** Sistema de gestión de bases de datos relacionales, elegido para la persistencia de datos del proyecto.
 - **MySQL Workbench:** Herramienta visual unificada para desarrolladores de bases de datos.
 - **Sequelize:** ORM (Object-Relational Mapper) para Node.js, utilizado para facilitar la interacción con bases de datos relacionales como MySQL.
-- ...
 
 ---
 
@@ -102,35 +97,30 @@
 
 - **Coordinación de Desarrollo Backend:** Con tres integrantes trabajando en CRUDs separados y la reestructuración de la arquitectura de capas, mantener la coherencia y la integración fluida del código fue un desafío constante.
 
-- ...
+- **Implementación del CRUD Persona:** Se concluye en conjunto con el grupo y el profesor en realizar una única clase Persona en lugar de diferenciarlas en Alumno, Docente y Personal (a futuro) diferenciandolas con atributo "tipoCodigo".
 
 ---
 
 ## 6. Próximos Pasos y Objetivos para la Siguiente Minuta
 
-- **Finalizar CRUDs Simples Asignados:** Completar la implementación de los CRUDs de Materia, Docente y Curso en el backend, incluyendo la persistencia en MySQL a través de Sequelize.
-
-  - **Responsable(s):** Todos los integrantes
-  - **Fecha Límite Sugerida:** [Definir fecha, ej. 08/08/2025]
-
 - **Abordar la Gestión de Usuarios:** Definir la estrategia para la gestión de usuarios (CRUD completo o predeterminados) y proceder con su implementación si corresponde.
   
-  - **Responsable(s):** Todos los integrantes
-  - **Fecha Límite Sugerida:** [Definir fecha, ej. 08/08/2025]
+  - **Responsable(s):** Todos los integrantes.
+  - **Fecha Límite Sugerida:** 20/08/2025
 
 - **Configuración y Primeros Pasos del Frontend:** Comenzar a configurar el proyecto de React y desarrollar los primeros componentes básicos. El objetivo es realizar un GET ALL desde el frontend hacia uno de los CRUDs ya implementados en el backend.
 
-  - **Responsable(s):** Todos los integrantes
-  - **Fecha Límite Sugerida:** [Definir fecha, ej. 30/08/2025]
+  - **Responsable(s):** Todos los integrantes.
+  - **Fecha Límite Sugerida:** 15/08/2025
 
-- ...
-
+- **Comenzar el desarrollo de los CRUDs dependientes:** El próximo paso en cuanto a requisitos para la regularidad es realizar los CRUDs Dictado y Examen ahora que ya se tienen los CRUDs simples de los cuales dependen.
+- 
+  - **Responsable(s):** Todos los integrantes.
+  - **Fecha Límite Sugerida:** 31/08/2025
 ---
 
 ## 7. Anexos / Referencias
 
-- [Enlace a documentos relevantes, wireframes, prototipos, etc.]
-- [Enlace a repositorios de código específicos.]
-- ...
+- *-*
 
 ---
