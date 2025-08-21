@@ -15,7 +15,7 @@
 Proponemos desarrollar una plataforma digital para institutos secundarios que este conformada por: un sector de gestión administrativa para la inscripción de alumnos y control de más apartados, un repositorio disponible en donde docentes publiquen material de estudio organizado por materias, un sector para la entrega de actividades, registros de calificaciones y asistencias de los alumnos, foros para cada materia, y avisos generales, todo esto con accesos personalizados según el rol que tenga el usuario (puede ser alumno, docente o personal administrativo).
 
 ### Modelo
-![Image](https://github.com/user-attachments/assets/10ef82c9-71ac-4367-a414-6653e2f1fe03)
+![Image](https://github.com/user-attachments/assets/64fd3d4c-cd23-4ac6-8fb0-cb1cb3c37de8)
 
 ## Alcance Funcional 
 
@@ -24,8 +24,8 @@ Proponemos desarrollar una plataforma digital para institutos secundarios que es
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Materia<br>2. CRUD Docente<br>3. CRUD Curso|
-|CRUD dependiente|1. CRUD Dictado {depende de CRUD Materia, CRUD Curso y CRUD Docente}<br>2. CRUD Examen {depende de CRUD Dictado y CRUD Docente}|
+|CRUD simple|1. CRUD Materia<br>2. CRUD Persona<br>3. CRUD Curso|
+|CRUD dependiente|1. CRUD Dictado {depende de CRUD Materia, CRUD Curso y CRUD Persona}<br>2. CRUD Examen {depende de CRUD Dictado y CRUD Persona}|
 |Listado<br>+<br>detalle| 1. Listado de Alumnos filtrado por Curso, muestra nombre, apellido, curso => detalle CRUD Alumno y CRUD Curso<br> 2. Listado de Examenes filtrado por Materia, muestra materia, fecha, temas, docente, notas de alumnos => detalle CRUD Examen y CRUD Dictado|
 |CUU/Epic|1. Registrar Asistencias de cada Alumno del Curso<br>2. Registrar Notas de Exámenes de cada Alumno|
 
@@ -33,7 +33,7 @@ Regularidad:
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Alumno<br>2. CRUD Personal<br>3. CRUD TrayectoriaEscolar {depende de CRUD Curso y CRUD Alumno}<br>4. CRUD Material {depende de CRUD Materia}<br>5. CRUD Foro {depende de CRUD Materia}<br>6. CRUD Aviso {depende de CRUD Personal}|
+|CRUD |1. CRUD TrayectoriaEscolar {depende de CRUD Curso y CRUD Persona}<br>2. CRUD Material {depende de CRUD Materia}<br>3. CRUD Foro {depende de CRUD Materia}<br>4. CRUD Aviso {depende de CRUD Persona}|
 |CUU/Epic|1. Generar Certificados Digitales con verificación<br>2. Realizar Inscripción de Alumno a Año en lote|
 
 
