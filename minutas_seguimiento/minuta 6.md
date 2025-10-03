@@ -1,7 +1,7 @@
 # Minuta 6
 
-**Período de la Minuta:** 30/08/2025 - 30/09/2025
-**Fecha de Generación de la Minuta:** 12/09/2025
+**Período de la Minuta:** 30/08/2025 - 30/09/2025  
+**Fecha de Generación de la Minuta:** 12/09/2025  
 **Modalidad de Trabajo:** Sincrónica (Reunión Virtual) / Asincrónica (Trabajo Separado)
 
 ---
