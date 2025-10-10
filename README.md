@@ -1,4 +1,4 @@
-# Propuesta de Trabajo Práctico - Desarrollo de Software - Plataforma digital de gestión académica para institutos secundarios
+# Proposal - Plataforma digital de gestión académica para institutos secundarios
 
 ## Grupo
 ### Integrantes
@@ -10,12 +10,14 @@
 * [frontendapp_tpGS](https://github.com/MartinianoLeonCorrea/frontendapp_tpGS.git)
 * [backendapp_tpGS](https://github.com/MartinianoLeonCorrea/backendapp_tpGS.git)
 
-## Tema
 ### Descripción
-Proponemos desarrollar una plataforma digital para institutos secundarios que este conformada por: un sector de gestión administrativa para la inscripción de alumnos y control de más apartados, un repositorio disponible en donde docentes publiquen material de estudio organizado por materias, un sector para la entrega de actividades, registros de calificaciones y asistencias de los alumnos, foros para cada materia, y avisos generales, todo esto con accesos personalizados según el rol que tenga el usuario (puede ser alumno, docente o personal administrativo).
+Desarrollamos una plataforma digital intuitiva y segura para institutos secundarios, diseñada para optimizar la gestión académica diaria. La aplicación se centra en la inscripción y gestión de alumnos, la organización de cursos y dictados de materias, y la administración de exámenes y calificaciones, con accesos personalizados según el rol del usuario (alumno o docente). Entre sus funcionalidades destacamos el acceso a un calendario interno con exámenes y eventos próximos propios del usuario, un foro como esapacio de consultas y avisos que compartirán entre el docente y sus alumnos, y todo esto sumado a las funcionalidades elementales ya mencionadas logran facilitar la operación diaria de la escuela, reducir el papeleo y mejorar la comunicación entre docentes y alumnos.  
+Más info y documentación [aquí](https://github.com/MartinianoLeonCorrea/tpGestionSecundaria/blob/main/docs/README.md).
 
 ### Modelo
-![Image](https://github.com/user-attachments/assets/64fd3d4c-cd23-4ac6-8fb0-cb1cb3c37de8)
+
+![Image](https://github.com/user-attachments/assets/c214f1c4-c348-4990-a633-889df2340521)
+
 
 ## Alcance Funcional 
 
