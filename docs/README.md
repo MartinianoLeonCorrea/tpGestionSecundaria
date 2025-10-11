@@ -1,14 +1,14 @@
 # Skola: conecta tu futuro
 
 ## Índice
-- [Instalación del proyecto](https://github.com/MartinianoLeonCorrea/tpGestionSecundaria/edit/main/docs/README.md#instalaci%C3%B3n-del-proyecto)
-- [Minutas de período](https://github.com/MartinianoLeonCorrea/tpGestionSecundaria/edit/main/docs/README.md#minutas-de-los-per%C3%ADodos)
-- [Tecnologías utilizadas](https://github.com/MartinianoLeonCorrea/tpGestionSecundaria/edit/main/docs/README.md#tecnolog%C3%ADas-utilizadas)
-- [Estructura del proyecto](https://github.com/MartinianoLeonCorrea/tpGestionSecundaria/edit/main/docs/README.md#estructura-del-proyecto)
-- [Feature tracking](https://github.com/MartinianoLeonCorrea/tpGestionSecundaria/edit/main/docs/README.md#features-tracking)
-- [Documentación de la API (pendiente)](https://github.com/MartinianoLeonCorrea/tpGestionSecundaria/edit/main/docs/README.md#documentaci%C3%B3n-de-la-api)
-- [Evidencia de ejecución de test automáticos (pendiente)](https://github.com/MartinianoLeonCorrea/tpGestionSecundaria/edit/main/docs/README.md#evidencia-de-ejecuci%C3%B3n-de-test-autom%C3%A1ticos)
-- [Video demo de app (pendiente)](https://github.com/MartinianoLeonCorrea/tpGestionSecundaria/edit/main/docs/README.md#video-demo-de-app)
+- [Instalación del proyecto](#instalaci%C3%B3n-del-proyecto)
+- [Minutas de período](#minutas-de-los-per%C3%ADodos)
+- [Tecnologías utilizadas](#tecnolog%C3%ADas-utilizadas)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Feature tracking](#features-tracking)
+- [Documentación de la API (pendiente)](#documentaci%C3%B3n-de-la-api)
+- [Evidencia de ejecución de test automáticos (pendiente)](#evidencia-de-ejecuci%C3%B3n-de-test-autom%C3%A1ticos)
+- [Video demo de app (pendiente)](#video-demo-de-app)
 
 ## Instalación del proyecto  
 ### Backend  
