@@ -76,56 +76,140 @@ A continuación una enumeración descriptiva de las minutas por período hasta l
 ## Estructura del proyecto
 ```
 DSW2025/
-├── backendapp_tpGS/                 # Backend Node.js/Express
-│   ├── src/
-│   │   ├── modules/                 # Módulos por entidad (reales)
-│   │   │   ├── materia/
-|   │   │   │   ├── materia.model.js        # Definición del modelo de datos (Sequelize)
-|   │   │   │   ├── materia.controller.js   # Lógica de manejo de peticiones HTTP
-|   │   │   │   ├── materia.service.js      # Lógica de negocio y acceso a datos
-|   │   │   │   ├── materia.routes.js       # Definición de rutas HTTP
-│   │   │   ├── curso/
-│   │   │   ├── examen/
-│   │   │   ├── dictado/
-│   │   │   ├── persona/
-│   │   │   ├── evaluacion/
-│   │   │   └── db/                  # Modelos y relaciones generales
-│   │   └── config/                  # Configuración (database.js, etc)
-│   ├── seeders/                     # Datos de prueba para la base de datos
-│   ├── migrations/                  # Migraciones de base de datos (usado por sequelize-cli)
-│   ├── .sequelizerc                 # Configuración de paths para sequelize-cli
-│   ├── index.js                     # Punto de entrada principal
-│   ├── package.json
-│   ├── yarn.lock
-│   ├── README.md
-│   └── .env                         # Variables de entorno (ignorado por git)
+├── backendapp_tpGS/                 # Backend Node.js/Express
+│   ├── src/
+│   │   ├── modules/                 # Módulos por entidad (reales)
+│   │   │   ├── materia/
+|   │   │   │   ├── materia.model.js        # Definición del modelo de datos (Sequelize)
+|   │   │   │   ├── materia.controller.js   # Lógica de manejo de peticiones HTTP
+|   │   │   │   ├── materia.service.js      # Lógica de negocio y acceso a datos
+|   │   │   │   ├── materia.routes.js       # Definición de rutas HTTP
+|   │   │   │   ├── materia.definitions.js  # [NUEVO] Definiciones o constantes
+|   │   │   │   └── materia.schema.js       # [NUEVO] Esquema de validación (ej. Joi)
+│   │   │   ├── curso/
+|   │   │   │   ├── curso.model.js
+|   │   │   │   ├── curso.controller.js
+|   │   │   │   ├── curso.service.js
+|   │   │   │   ├── curso.routes.js
+|   │   │   │   ├── curso.definitions.js
+|   │   │   │   └── curso.schema.js
+│   │   │   ├── examen/
+|   │   │   │   ├── examen.model.js
+|   │   │   │   ├── examen.controller.js
+|   │   │   │   ├── examen.service.js
+|   │   │   │   ├── examen.routes.js
+|   │   │   │   ├── examen.definitions.js
+|   │   │   │   └── examen.schema.js
+│   │   │   ├── dictado/
+|   │   │   │   ├── dictado.model.js
+|   │   │   │   ├── dictado.controller.js
+|   │   │   │   ├── dictado.service.js
+|   │   │   │   ├── dictado.routes.js
+|   │   │   │   ├── dictado.definitions.js
+|   │   │   │   └── dictado.schema.js
+│   │   │   ├── persona/
+|   │   │   │   ├── persona.model.js
+|   │   │   │   ├── persona.controller.js
+|   │   │   │   ├── persona.service.js
+|   │   │   │   ├── persona.routes.js
+|   │   │   │   ├── persona.definitions.js
+|   │   │   │   └── persona.schema.js
+│   │   │   ├── evaluacion/
+|   │   │   │   ├── evaluacion.model.js
+|   │   │   │   ├── evaluacion.controller.js
+|   │   │   │   ├── evaluacion.service.js
+|   │   │   │   ├── evaluacion.routes.js
+|   │   │   │   ├── evaluacion.definitions.js
+|   │   │   │   └── evaluacion.schema.js
+│   │   │   └── db/                  # Modelos y relaciones generales
+│   │   │       └── index.js          # [NUEVO] Índice de modelos y relaciones
+│   │   ├── config/                  # Configuración
+│   │   │   └── database.js          # [ACTUALIZADO] Configuración de base de datos
+│   │   ├── middleware/              # [NUEVO] Middleware de Express
+│   │   │   ├── errorHandler.js
+│   │   │   ├── notFound.js
+│   │   │   └── validateRequest.js
+│   │   ├── utils/                   # [NUEVO] Utilidades (funciones auxiliares)
+│   │   └── app.js                   # [NUEVO] Configuración principal de Express (Reemplaza index.js como app principal)
+│   ├── seeders/
+│   ├── migrations/
+│   ├── .sequelizerc
+│   ├── index.js                     # Punto de entrada principal (Ahora podría solo llamar a app.js)
+│   ├── package.json
+│   ├── yarn.lock
+│   ├── README.md
+│   └── .env
 │
-├── frontendapp_tpGS/                # Frontend React
-│   ├── src/
-│   │   ├── components/              # Componentes reutilizables (Header, Sidebar, CardMateria, etc)
-│   │   ├── pages/                   # Páginas por ruta
-│   │   │   ├── alumno/              # Vistas de alumno
-│   │   │   ├── docente/             # Vistas de docente
-│   │   │   └── ...                  # Otras vistas
-│   │   └── context/                 # Context API para manejo de estado global
-│   ├── public/                      # Archivos estáticos (index.html, icono.svg, vite.svg, etc)
-│   ├── package.json
-│   ├── README.md
-│   ├── vite.config.js
-│   └── eslint.config.js
+***
 │
-└── tpGestionSecundaria/             # Repo general
-    ├── README.md                    # Punto de entrada
-    ├── docs/
-    |   ├── README.md                # Más info y documentación
-    ├── minutas_seguimiento/         # Minutas 
-    │   ├── minuta 1.md
-    │   ├── minuta 2.md
-    │   ├── minuta 3.md
-    │   ├── minuta 4.md
-    │   ├── minuta 5.md
-    │   ├── minuta 6.md
-    │   └── minuta 7.md
+├── frontendapp_tpGS/                # Frontend React
+│   ├── src/
+│   │   ├── assets/                  # [NUEVO] Archivos estáticos específicos (logos, iconos, etc.)
+│   │   │   └── react.svg
+│   │   ├── components/              # Componentes reutilizables
+│   │   │   ├── CardDictado.jsx       # [NUEVO]
+│   │   │   ├── CardMateria.jsx
+│   │   │   ├── Form.jsx              # [NUEVO]
+│   │   │   ├── Foro.jsx              # [NUEVO]
+│   │   │   ├── GridMaterias.jsx      # [NUEVO]
+│   │   │   ├── Header.jsx
+│   │   │   ├── Icons.jsx             # [NUEVO]
+│   │   │   ├── MainContent.jsx       # [NUEVO]
+│   │   │   ├── Notification.jsx      # [NUEVO]
+│   │   │   ├── Perfil.jsx            # [NUEVO]
+│   │   │   └── Sidebar.jsx
+│   │   ├── pages/                   # Páginas por ruta
+│   │   │   ├── alumno/              # Vistas de alumno
+│   │   │   │   ├── AsistenciasPage.jsx     # [NUEVO]
+│   │   │   │   ├── DashboardAlumno.jsx     # [NUEVO]
+│   │   │   │   ├── ExamenesPage.jsx        # [NUEVO]
+│   │   │   │   ├── MateriaPage.jsx         # [NUEVO]
+│   │   │   │   ├── MateriasAlumno.jsx      # [NUEVO]
+│   │   │   │   ├── NotasPage.jsx           # [NUEVO]
+│   │   │   │   └── PerfilAlumnoPage.jsx    # [NUEVO]
+│   │   │   └── docente/             # Vistas de docente
+│   │   │       ├── BorrarExamenPage.jsx    # [NUEVO]
+│   │   │       ├── DashboardDocente.jsx    # [NUEVO]
+│   │   │       ├── DictadoPage.jsx         # [NUEVO]
+│   │   │       ├── EditarExamenPage.jsx    # [NUEVO]
+│   │   │       ├── NuevoExamenPage.jsx     # [NUEVO]
+│   │   │       ├── PerfilDocentePage.jsx   # [NUEVO]
+│   │   │       ├── SubirNotasPage.jsx      # [NUEVO]
+│   │   │       ├── CalendarioPage.jsx      # [NUEVO]
+│   │   │       └── RegistrarAlumno.jsx      # [NUEVO]
+│   │   ├── context/                 # Context API
+│   │   │   └── UserContext.js        # [NUEVO]
+│   │   ├── schemas/                 # [NUEVO] Esquemas de validación de frontend (ej. Zod, Yup)
+│   │   │   ├── cursoSchema.js
+│   │   │   ├── dictadoSchema.js
+│   │   │   ├── evaluacionSchema.js
+│   │   │   ├── examenSchema.js
+│   │   │   ├── materiaSchema.js
+│   │   │   └── personaSchema.js
+│   │   ├── App.css                 # [NUEVO]
+│   │   ├── App.jsx                 # [NUEVO] Componente principal
+│   │   ├── index.css               # [NUEVO]
+│   │   └── main.jsx                # [NUEVO] Punto de entrada (renderizador)
+│   ├── public/
+│   ├── package.json
+│   ├── README.md
+│   ├── vite.config.js
+│   └── eslint.config.js
+│
+***
+│
+└── tpGestionSecundaria/             # Repo general
+    ├── README.md
+    ├── docs/
+    │   └── README.md
+    └── minutas_seguimiento/
+        ├── minuta 1.md
+        ├── minuta 2.md
+        ├── minuta 3.md
+        ├── minuta 4.md
+        ├── minuta 5.md
+        ├── minuta 6.md
+        └── minuta 7.md
 
 ```
 
