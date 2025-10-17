@@ -109,14 +109,6 @@ DB_NAME=secundaria
 NODE_ENV=development
 ```
 
-#### Paso 4: Inicializar la base de datos
-
-El backend sincronizará automáticamente las tablas al iniciar, pero si deseas cargar datos de ejemplo:
-
-```bash
-yarn seed
-```
-
 ### 4. Configurar el Frontend
 
 #### Paso 1: Navegar a la carpeta del frontend
