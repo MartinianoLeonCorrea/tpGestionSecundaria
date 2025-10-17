@@ -507,6 +507,11 @@ DSW2025/
 - ⏳ = No iniciado, pendiente para el próximo período
 - 🚩 = Pendiente para la etapa de aprobación directa (no realizado aún)
 
+  
+## Link de Pull Request
+
+[Pull Request](https://github.com/utnfrrodsw/tp/pull/192)
+
 ## Documentación de la API
 
 _Pendiente para AD_
